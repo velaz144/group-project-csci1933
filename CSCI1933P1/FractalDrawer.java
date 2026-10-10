@@ -35,6 +35,36 @@ public class FractalDrawer {
     // TODO:
     // drawCircleFractal draws a circle fractal using recursive techniques
     public void drawCircleFractal(double radius, double x, double y, Color c, Canvas can, int level) {
+        if (level <= 0){
+            return;
+        }
+        else {
+            level -= 1;
+            if (level == 7){
+                c = Color.PINK;
+            }
+        else if (level == 6) {
+            c = Color.MAGENTA;
+        }
+        else if (level == 5) {
+            c = Color.RED;
+        }
+        else if (level == 4) {
+            c = Color.CYAN;
+        }
+        else if (level == 3){
+            c = Color.WHITE;
+        }
+        else if (level == 2){
+            c = Color.ORANGE;
+        }
+        else if (level == 1){
+            c = Color.LIGHT_GRAY;
+        }
+        else {
+            c = Color.BLUE;
+        }
+    }
 
 
     }
